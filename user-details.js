@@ -52,12 +52,14 @@ async function getUserDetails() {
                 const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`);
                 const posts = await response.json();
 
-                const postsList = document.createElement('ul');
+                const postsList = document.createElement('div');
+                postsList.classList.add('postsList');
 
                 posts.forEach(post => {
-                    const postItem = document.createElement('li');
+                    const postItem = document.createElement('span');
                     const postLink = document.createElement('a');
                     postLink.textContent = post.title;
+                    postLink.classList = 'post';
                     postLink.href = `post-details.html?id=${post.id}`;
                     postItem.appendChild(postLink);
                     postsList.appendChild(postItem);

@@ -44,17 +44,12 @@ body{
 }
 
 .userDetails {
-  width: 40%;
+  width: 100%;
   text-align: left;
   border: 1px solid #ccc;
   padding: 20px;
   background-color: #fcfce8;
   border-radius: 20px;
-}
-
-.postsButtonContainer {
-  background-color: blue;
-
 }
 
 .postsButton {
@@ -63,18 +58,23 @@ body{
   background-color: #007bff;
   color: #fff;
   border: none;
-  cursor: pointer;
-}
-
-.postsButton:hover {
-  background-color: #23206c;
-}
+  }
 
 #postsButton {
   width: 90%;
   margin: 0 auto;
   display: block;
 
+}
+.postsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.post{
+  width: 5%;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .post-detail-block{
   color: white;
