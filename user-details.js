@@ -3,7 +3,6 @@ function getUserIdFromUrl() {
     return urlParams.get('id');
 }
 
-
 async function getUserDetails() {
     try {
         const userId = getUserIdFromUrl();
@@ -17,12 +16,26 @@ async function getUserDetails() {
             <h2>User Details</h2>
             <p>ID: ${user.id}</p>
             <p>Name: ${user.name}</p>
+            <p>Username: ${user.username}</p>
             <p>Email: ${user.email}</p>
+            <p>Address: 
+                    <ol>Street: ${user.address.street}</ol>
+                    <ol>Suite: ${user.address.suite}</ol>
+                    <ol>City: ${user.address.city}</ol>
+                    <ol>Zipcode: ${user.address.zipcode}</ol>
+                    <ul>Geo:
+                        <li>lat: ${user.address.geo.lat}</li>
+                        <li>lng: ${user.address.geo.lng}</li>
+                        </ul>
+            </p>
             <p>Phone: ${user.phone}</p>
             <p>Website: ${user.website}</p>
-            <p>Company: ${user.company.name}</p>
-            <p>Address: ${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}</p>
-        `;
+            <p>Company: 
+                    <li>Name: ${user.company.name}</li> 
+                    <li>catchPhrase: ${user.company.catchPhrase}</li>
+                    <li>bs: ${user.company.bs}</li>
+            </p>
+`;
 
         const existingPostsButton = document.getElementById('postsButton');
 
