@@ -40,7 +40,6 @@ async function getUserDetails() {
         const existingPostsButton = document.getElementById('postsButton');
 
         if (existingPostsButton) {
-            // Видалення існуючої кнопки
             existingPostsButton.remove();
         }
 
