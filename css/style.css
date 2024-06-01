@@ -1,0 +1,87 @@
+
+body{
+  background-image: url("/img/Firefly  бла-бла-бла.jpg");
+  opacity: 0.8;
+}
+
+.user-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.user-block {
+  width: calc(50% - 20px);
+  margin: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.user-block p {
+  margin: 0;
+  padding: 0;
+}
+
+.user-block button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.userDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2f2f6c;
+
+}
+
+.userDetails {
+  width: 90%;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fcfce8;
+}
+
+.postsButtonContainer {
+  background-color: blue;
+
+}
+
+.postsButton {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.postsButton:hover {
+  background-color: #23206c;
+}
+
+#postsButton {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+
+}
+.post-detail-block{
+  color: white;
+}
+.comments-grid {
+  background-color: #333333;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  color: white;
+}
