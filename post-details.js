@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         postDetailBlock.appendChild(postInfo);
         postDetailsElement.appendChild(postDetailBlock);
-        const commentsResponse = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`);
+        const commentsResponse = await fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`);
         const comments = await commentsResponse.json();
 
         const commentsBlock = document.createElement('div');
