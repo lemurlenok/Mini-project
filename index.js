@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             detailsButton.addEventListener('click', () => {
                 window.location.href = `user-details.html?id=${user.id}`;
             });
+
             userBlock.appendChild(userInfo);
             userBlock.appendChild(detailsButton);
 
@@ -26,5 +27,3 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.error('Error fetching users:', error);
     }
 });
-
-
