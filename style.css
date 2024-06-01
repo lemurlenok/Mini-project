@@ -13,12 +13,12 @@ body{
 .user-block {
   width: calc(50% - 20px);
   margin: 10px;
+  color: white;
   padding: 10px;
-  background-color: #f6ead5;
   opacity: 0.9;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  border: 1px solid #649cc9;
+  border: 1px solid #fcf5d5;
 }
 
 .user-block p {
@@ -45,18 +45,17 @@ body{
 }
 
 .userDetails {
-  width: 100%;
+  width: 45%;
   text-align: left;
   border: 1px solid #f8eebc;
   padding: 20px;
-  background-color: #fdfbf1;
+color: white;
   border-radius: 20px;
 }
 
 .postsButton {
   padding: 10px;
   font-size: 16px;
-  background-color: #f8f0bc;
   color: #fff;
   border: none;
   }
@@ -73,13 +72,15 @@ body{
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
+.post{
+  color: white;
 
-
+}
 .post-detail-block{
   color: white;
 }
 .comments-grid {
-  background-color: #333333;
+  font-size: 18px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
