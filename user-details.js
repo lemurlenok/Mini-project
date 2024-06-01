@@ -53,7 +53,7 @@ async function getUserDetails() {
                 const posts = await response.json();
 
                 const postsList = document.createElement('div');
-                postsList.classList.add('postsList');
+                postsList.classList.add('posts-grit');
 
                 posts.forEach(post => {
                     const postItem = document.createElement('span');
