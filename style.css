@@ -1,6 +1,15 @@
 
-body{
-  background-image: url("Firefly  бла-бла-бла.jpg");
+body.page1{
+  background-image: url("imag1.jpg");
+}
+body.page2{
+  background-image: url("cat.jpg");
+}
+body.page3{
+  background-image: url("piple.jpg");
+}
+.page1, .page2, .page3{
+  background-size: cover;
   opacity: 0.9;
 }
 
