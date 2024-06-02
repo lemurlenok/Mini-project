@@ -20,12 +20,13 @@ body.page3{
 }
 .user-block, .user-block button, .userDetails, .postsButton, .post, .post-detail-block, .comments-grid{
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 .user-block {
   width: calc(50% - 20px);
   margin: 10px;
   padding: 10px;
-  opacity: 0.9;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border: 1px solid #fcf5d5;
@@ -38,7 +39,7 @@ body.page3{
 
 .user-block button {
   margin-top: 10px;
-  background-color: #007bff;
+  background-color: #0d4683;
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
@@ -71,6 +72,9 @@ body.page3{
   width: 90%;
   margin: 0 auto;
   display: block;
+  background-color: #fafaf9;
+  color: #03035e;
+  font-weight: bold;
 
 }
 
@@ -79,7 +83,6 @@ body.page3{
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
-
 
 .comments-grid {
   font-size: 18px;
